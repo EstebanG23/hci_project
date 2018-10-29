@@ -1,0 +1,260 @@
+{
+	"id": "1dc13d68-7198-4a8b-b1f0-ca68b70af622",
+	"name": "Rator",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"7315015d-c2a6-4c57-af62-4d0946636cb8",
+		"45986ad9-bb2e-4f87-bca8-95d053e3a182",
+		"faef360f-4f65-4b44-8c69-a1fbaba317ab",
+		"14fbaa60-009c-4e76-a0ec-2236fa0a1b96",
+		"2ba2f162-178b-4914-81ea-f41692f58ffa",
+		"256a4072-20ef-4d69-9cef-966d973f0595",
+		"c5b4e08b-8275-4883-8f55-e575167e31d7",
+		"7b9c4456-13ef-4b56-99a2-53571a642d64",
+		"6d25550a-3019-4959-98bf-d7ae24162213",
+		"428428ee-4c83-4bcd-ba64-55f6e07fee73",
+		"53f59aa5-2f54-404a-af63-1daefb03223c",
+		"c24019b2-4f64-4d09-8db9-1ad67087e63f"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "14fbaa60-009c-4e76-a0ec-2236fa0a1b96",
+			"name": "Get User",
+			"url": "http://localhost:8080/5bce9bb8fcb0365001374d5d/courses",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "256a4072-20ef-4d69-9cef-966d973f0595",
+			"name": "Get All Professors",
+			"url": "http://localhost:8080/professors",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "2ba2f162-178b-4914-81ea-f41692f58ffa",
+			"name": "Create Professor",
+			"url": "http://localhost:8080/professors",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"name\": \"Dave\",\n\t\"coursesTaught\": [\n\t\t{\n\t\t\t\"name\": \"Object Oriented Programming\",\n\t\t\t\"term\": \"Spring 2017\",\n\t\t\t\"evaluation\": {\n\t\t\t\t\"courseCode\": \"CDAABC\",\n\t\t\t\t\"professorId\": \"123\",\n\t\t    \t\"numOfEvaluation\": 1,\n\t\t    \t\"overall\": 4,\n\t\t\t    \"helpful\": 2,\n\t\t\t    \"organization\": 5,\n\t\t\t    \"communication\": 2,\n\t\t\t    \"interest\": 1,\n\t\t\t    \"difficulty\": 2\n\t\t\t\t},\n\t\t\t\"courseCode\": \"CDAABC\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Data Structures\",\n\t\t\t\"term\": \"Fall 2017\",\n\t\t\t\"evaluation\": {\n\t\t\t\t\"courseCode\": \"COP3530\",\n\t\t\t\t\"professorId\": \"123\",\n\t\t    \t\"numOfEvaluation\": 1,\n\t\t    \t\"overall\": 4,\n\t\t\t    \"helpful\": 2,\n\t\t\t    \"organization\": 5,\n\t\t\t    \"communication\": 2,\n\t\t\t    \"interest\": 1,\n\t\t\t    \"difficulty\": 2\n\t\t\t\t},\n\t\t\t\"courseCode\": \"COP3530\"\n\t\t}\n\t]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "428428ee-4c83-4bcd-ba64-55f6e07fee73",
+			"name": "Get Evaluation",
+			"url": "http://localhost:8080/evaluation/5bcfd3befcb03680b09f2eff/CIS1234",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "45986ad9-bb2e-4f87-bca8-95d053e3a182",
+			"name": "Get All Users",
+			"url": "http://localhost:8080/",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "53f59aa5-2f54-404a-af63-1daefb03223c",
+			"name": "Get All Evaluations",
+			"url": "http://localhost:8080/evaluations",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "6d25550a-3019-4959-98bf-d7ae24162213",
+			"name": "Create Professor with null evals",
+			"url": "http://localhost:8080/professors",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"name\": \"Cheryl Resch\",\n\t\"coursesTaught\": [\n\t\t{\n\t\t\t\"name\": \"Software Engineering\",\n\t\t\t\"term\": \"Fall 2017\",\n\t\t\t\"evaluation\": null,\n\t\t\t\"courseCode\": \"CEN1234\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Data Structures\",\n\t\t\t\"term\": \"Fall 2017\",\n\t\t\t\"evaluation\": null,\n\t\t\t\"courseCode\": \"COP3530\"\n\t\t}\n\t]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7315015d-c2a6-4c57-af62-4d0946636cb8",
+			"name": "Create User",
+			"url": "http://localhost:8080/",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"username\": \"test3\",\n\t\"password\": \"test\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7b9c4456-13ef-4b56-99a2-53571a642d64",
+			"name": "Get Professor",
+			"url": "http://localhost:8080/professors/5bcfd3befcb03680b09f2eff",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "c24019b2-4f64-4d09-8db9-1ad67087e63f",
+			"name": "Update evaluation",
+			"url": "http://localhost:8080/5bcfec1afcb0368f7b5a295a/course/COP3530/evaluate",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"numOfEvaluation\": 1,\n\t\"overall\": 4,\n    \"helpful\": 2,\n    \"organization\": 5,\n    \"communication\": 2,\n    \"interest\": 1,\n    \"difficulty\": 2\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c5b4e08b-8275-4883-8f55-e575167e31d7",
+			"name": "Get All Professors by Course",
+			"url": "http://localhost:8080/professors/course/CDAABC",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "faef360f-4f65-4b44-8c69-a1fbaba317ab",
+			"name": "Create User with courses",
+			"url": "http://localhost:8080/",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"username\": \"user1\",\n\t\"password\": \"test1\",\n\t\"courses\": [\n\t\t{\n\t\t\t\"name\": \"Data Structures\",\n\t\t\t\"code\": \"COP3530\",\n\t\t\t\"professorId\": \"5bcfeb21fcb0368f7b5a2954\",\n\t\t\t\"term\": \"Fall 2018\",\n\t\t\t\"section\": \"ABSCD\"\n\t\t},\n\t\t{\n\t\t\t\"name\": \"Software Engineering\",\n\t\t\t\"code\": \"CEN1234\",\n\t\t\t\"professorId\": \"5bcfeb7bfcb0368f7b5a2957\",\n\t\t\t\"term\": \"Fall 2018\",\n\t\t\t\"section\": \"ABSCD\"\n\t\t}\n\t]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
